@@ -1,20 +1,28 @@
 import createClient from "openapi-fetch";
 import { paths } from "./schema";
 import type {
-  InspectRequestHandler,
   RequestHandlerResult,
   RollupsRequest,
   AdvanceRequestData,
   InspectRequestData,
 } from "./types";
 import { handleAdvance } from "./advance";
+import { handleInspect } from "./inspect";
+
+const { Database } = require("node-sqlite3-wasm");
+export const db = new Database("/tmp/database.db");
+
+try {
+  db.run(
+    "CREATE TABLE IF NOT EXISTS posts (id INTEGER PRIMARY KEY, creator TEXT, content TEXT, likes INTEGER)"
+  );
+  console.log("Post table initialized");
+} catch (e) {
+  console.log("ERROR initializing database: ", e);
+}
 
 const rollupServer = process.env.ROLLUP_HTTP_SERVER_URL;
 console.log("HTTP rollup_server url is " + rollupServer);
-
-const handleInspect: InspectRequestHandler = async (data) => {
-  console.log("Received inspect request data " + JSON.stringify(data));
-};
 
 const main = async () => {
   const { POST } = createClient<paths>({ baseUrl: rollupServer });

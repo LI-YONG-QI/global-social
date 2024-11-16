@@ -1138,6 +1138,11 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
+node-sqlite3-wasm@^0.8.26:
+  version "0.8.26"
+  resolved "https://registry.yarnpkg.com/node-sqlite3-wasm/-/node-sqlite3-wasm-0.8.26.tgz#59227475c7b3c6e9d8a9ed6d1a6bd9b664ab0dca"
+  integrity sha512-IgYM5wIitTGLqohphlIy51jUCC7U8/1FrH5nYX5mhFCpKXA+NuhKC/51ncIuHnshir8HqGnqSLvSFKdk1I1Urw==
+
 normalize-package-data@^2.3.2:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.5.0.tgz#e66db1838b200c1dfc233225d12cb36520e234a8"
