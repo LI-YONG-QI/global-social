@@ -2,6 +2,8 @@
 
 Global Social is a decentralized social protocol that leverages Cartesi's powerful computational capabilities to make social data transparent and resistant to censorship.
 
+![](https://i.imgur.com/FxXvKP2.png)
+
 # Why Global Social & Cartesi?
 
 This is a Social Protocol built on Cartesi, leveraging Cartesi's RISC-V architecture to store large social posts and updates. More importantly, Cartesi's powerful computational capabilities make decentralized social algorithms possible. People can review publicly transparent algorithms and verify the correctness of their data.
